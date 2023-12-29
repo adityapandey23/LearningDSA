@@ -1,67 +1,25 @@
-// // Pattern-1
+// // Pattern-11
 // #include <iostream>
 // using namespace std;
 // int main(){
 //     int n;
 //     cout<<"Enter a number: "<<endl;
 //     cin>>n;
-//     for(int i=0;i<n;i++){
-//         for(int j=0;j<n;j++)
-//             cout<<j+1;
-//         cout<<endl;
-//     }
-//     return 0;
-// }
-
-
-
-// // Pattern-1 (while only implementation)
-// #include <iostream>
-// using namespace std;
-// int main(){
-//     int n;
-//     cout<<"Enter a number: "<<endl;
-//     cin>>n;
-
-//     int i=0,j;
+//     int i,j;
 //     while(i<n){
 //         j=0;
 //         while(j<n){
-//             cout<<j+1;
+//             cout<< char ('A'+ i + j)<< " ";
 //             j++;
 //         }
-//         cout<<endl;
 //         i++;
-//     }
-//     return 0;
-// }
-
-
-
-// // Pattern-2
-// #include <iostream>
-// using namespace std;
-// int main(){
-//     int n;
-//     cout<<"Enter a number: "<<endl;
-//     cin>>n;
-//     int i=n,j;
-//     while(i>0){
-//         j=n;
-//         while(j>0){
-//             cout<<j;
-//             j--;
-//         }
 //         cout<<endl;
-//         i--;
 //     }
-
 //     return 0;
 // }
 
 
-
-// // Pattern-2 (Different approach)
+// // Pattern-12
 // #include <iostream>
 // using namespace std;
 // int main(){
@@ -71,8 +29,8 @@
 //     int i=0,j;
 //     while(i<n){
 //         j=0;
-//         while(j<n){
-//             cout<<n-j;
+//         while(j<=i){
+//             cout<< char ('A' + i) << " ";
 //             j++;
 //         }
 //         i++;
@@ -83,18 +41,18 @@
 
 
 
-// // Pattern-3
+// // Pattern-13
 // #include <iostream>
 // using namespace std;
 // int main(){
 //     int n;
 //     cout<<"Enter a number: "<<endl;
 //     cin>>n;
-//     int count=1,i=0,j;
+//     int i=0,j,count=0;
 //     while(i<n){
 //         j=0;
-//         while(j<n){
-//             cout<<count;
+//         while(j<=i){
+//             cout<< char ('A' + count) << " ";
 //             j++;
 //             count++;
 //         }
@@ -106,29 +64,29 @@
 
 
 
-// // Pattern-4
+// // Pattern-14
 // #include <iostream>
 // using namespace std;
 // int main(){
 //     int n;
 //     cout<<"Enter a number: "<<endl;
 //     cin>>n;
-//     int i=0,j;
+//     int i,j;
 //     while(i<n){
 //         j=0;
 //         while(j<=i){
-//             cout<<"*";
+//             cout << char ('A' + i + j) <<" ";
 //             j++;
 //         }
-//         i++;
 //         cout<<endl;
+//         i++;
 //     }
 //     return 0;
 // }
 
 
 
-// // Pattern-5
+// // Pattern-15
 // #include <iostream>
 // using namespace std;
 // int main(){
@@ -139,11 +97,11 @@
 //     while(i<n){
 //         j=0;
 //         while(j<=i){
-//             cout<<i+1;
+//             cout << char ('A' - 1 + n - i + j) << " ";
 //             j++;
 //         }
-//         i++;
 //         cout<<endl;
+//         i++;
 //     }
 //     return 0;
 // }

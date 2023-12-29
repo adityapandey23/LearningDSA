@@ -1,33 +1,15 @@
-// // Pattern-1
+// // Pattern-6
 // #include <iostream>
 // using namespace std;
 // int main(){
 //     int n;
 //     cout<<"Enter a number: "<<endl;
 //     cin>>n;
-//     for(int i=0;i<n;i++){
-//         for(int j=0;j<n;j++)
-//             cout<<j+1;
-//         cout<<endl;
-//     }
-//     return 0;
-// }
-
-
-
-// // Pattern-1 (while only implementation)
-// #include <iostream>
-// using namespace std;
-// int main(){
-//     int n;
-//     cout<<"Enter a number: "<<endl;
-//     cin>>n;
-
-//     int i=0,j;
+//     int i=0,j,count=1;
 //     while(i<n){
 //         j=0;
-//         while(j<n){
-//             cout<<j+1;
+//         while(j<=i){
+//             cout<<count++<<" "; // For better spacing
 //             j++;
 //         }
 //         cout<<endl;
@@ -38,75 +20,51 @@
 
 
 
-// // Pattern-2
+// // Pattern-7
 // #include <iostream>
 // using namespace std;
 // int main(){
 //     int n;
 //     cout<<"Enter a number: "<<endl;
 //     cin>>n;
-//     int i=n,j;
-//     while(i>0){
-//         j=n;
+//     int i=0,j;
+//     while(i<n){
+//         j=0;
+//         while(j<=i){
+//             cout<<i+1+j<<" ";
+//             j++;
+//         }
+//         i++;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+
+
+// // Pattern-8
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"Enter a number: "<<endl;
+//     cin>>n;
+//     int i=0,j;
+//     while(i<n){
+//         j=i+1;
 //         while(j>0){
-//             cout<<j;
+//             cout<<j<<" ";
 //             j--;
 //         }
 //         cout<<endl;
-//         i--;
-//     }
-
-//     return 0;
-// }
-
-
-
-// // Pattern-2 (Different approach)
-// #include <iostream>
-// using namespace std;
-// int main(){
-//     int n;
-//     cout<<"Enter a number: "<<endl;
-//     cin>>n;
-//     int i=0,j;
-//     while(i<n){
-//         j=0;
-//         while(j<n){
-//             cout<<n-j;
-//             j++;
-//         }
 //         i++;
-//         cout<<endl;
 //     }
 //     return 0;
 // }
 
 
 
-// // Pattern-3
-// #include <iostream>
-// using namespace std;
-// int main(){
-//     int n;
-//     cout<<"Enter a number: "<<endl;
-//     cin>>n;
-//     int count=1,i=0,j;
-//     while(i<n){
-//         j=0;
-//         while(j<n){
-//             cout<<count;
-//             j++;
-//             count++;
-//         }
-//         i++;
-//         cout<<endl;
-//     }
-//     return 0;
-// }
-
-
-
-// // Pattern-4
+// // Pattern-8 (Alternative approach)
 // #include <iostream>
 // using namespace std;
 // int main(){
@@ -117,7 +75,7 @@
 //     while(i<n){
 //         j=0;
 //         while(j<=i){
-//             cout<<"*";
+//             cout<<(i-j+1)<<" ";
 //             j++;
 //         }
 //         i++;
@@ -128,7 +86,7 @@
 
 
 
-// // Pattern-5
+// // Pattern-9
 // #include <iostream>
 // using namespace std;
 // int main(){
@@ -138,8 +96,30 @@
 //     int i=0,j;
 //     while(i<n){
 //         j=0;
-//         while(j<=i){
-//             cout<<i+1;
+//         while(j<n){
+//             cout<< char ('A'+ i) <<" ";
+//             j++;
+//         }
+//         i++;
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+
+
+// // Pattern-10
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"Enter a number: "<<endl;
+//     cin>>n;
+//     int i=0,j;
+//     while(i<n){
+//         j=0;
+//         while(j<n){
+//             cout<< char ('A'+ j) <<" ";
 //             j++;
 //         }
 //         i++;
